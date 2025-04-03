@@ -62,5 +62,19 @@ mainmenu.add_cascade(label="Help",
                      menu=helpmenu)
 
 
+#Размещаем в ячейке (1,4) метку с текстом
+btn_1 = Button(window, text = "Delete", bg = "black", width = 20, fg = "white", height=2)
+btn_1.grid(row=2, column=0, sticky=S, pady=30,
+           padx=10)
+#Размещаем в ячейке (2,2) кнопку "Очистить"
+btn_2 = Button(window, text = "Edit...", bg =
+"black", width = 20, fg = "white", height=2)
+btn_2.grid(row=2, column=2, sticky=S, pady=30,
+           padx=10)
+#Размещаем в ячейке (2,4) кнопку "Выход"
+btn_3 = Button(window, text = "New...", bg = "black",
+               width = 20, fg = "white", height=2)
+btn_3.grid(row=2, column=4, sticky=S, pady=30,
+           padx=10)
 
 window.mainloop()
